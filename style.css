@@ -121,12 +121,12 @@ body {
   }
 
   .time {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     font-size: 30px;
   }
 
   .date {
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     font-size: 15px;
   }
 }
