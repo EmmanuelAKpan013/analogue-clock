@@ -42,7 +42,6 @@ const months = [
 
 setInterval(() => {
   const time = new Date();
-  console.log(time);
   const day = time.getDay();
   const month = time.getMonth();
   const date = time.getDate();
@@ -52,14 +51,11 @@ setInterval(() => {
   const minutes = time.getMinutes();
   const seconds = time.getSeconds();
   const ampm = hour > 12 ? 'PM' : 'AM';
-  console.log(day, month);
 
   dateEl.innerHTML = `${days[day]}, ${date} ${months[month]}`;
   timeEl.innerHTML = `${
     hourIn12Hour < 10 ? `0${hourIn12Hour}` : hourIn12Hour
   }: ${minutes < 10 ? `0${minutes}` : minutes} ${ampm}`;
-
-  console.log(hourIn12Hour);
 
   hoursEl.style.transform = `translate(-50%, -100%) rotate(${
     hourIn12Hour * 30
