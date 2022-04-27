@@ -114,3 +114,19 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
+
+@media only screen and (max-width: 500px) {
+  .clock {
+    margin-bottom: 90px;
+  }
+
+  .time {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  .date {
+    margin-bottom: 15px;
+    font-size: 15px;
+  }
+}

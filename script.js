@@ -55,9 +55,9 @@ setInterval(() => {
   console.log(day, month);
 
   dateEl.innerHTML = `${days[day]}, ${date} ${months[month]}`;
-  timeEl.innerHTML = `${hourIn12Hour < 10 ? `0${hour}` : hourIn12Hour}: ${
-    minutes < 10 ? `0${minutes}` : minutes
-  } ${ampm}`;
+  timeEl.innerHTML = `${
+    hourIn12Hour < 10 ? `0${hourIn12Hour}` : hourIn12Hour
+  }: ${minutes < 10 ? `0${minutes}` : minutes} ${ampm}`;
 
   console.log(hourIn12Hour);
 
